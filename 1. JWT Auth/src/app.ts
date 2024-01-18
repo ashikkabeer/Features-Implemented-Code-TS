@@ -1,12 +1,12 @@
-import express, { Request, Response } from 'express';
+import express, { Application, Request, Response } from 'express';
 import router from './routes/index.route.js';
 
-const app = express();
+const app:Application = express();
 const port = 3000;
 
 app.use(express.json());
 
-app.use('/', router);
+app.use('/api/v1', router);
 
 
 app.listen(port, () => {

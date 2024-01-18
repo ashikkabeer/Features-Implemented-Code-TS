@@ -4,4 +4,4 @@ import { login, verifyToken } from '../controllers/auth.controller.js'; // Fix: 
 router.post('/', login);
 router.post('/verify', verifyToken);
 export default router;
-//# sourceMappingURL=index.route.js.map
+//# sourceMappingURL=auth.route.js.map

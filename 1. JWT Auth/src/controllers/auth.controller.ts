@@ -13,6 +13,12 @@ type User = {
 const secret = process.env.SECRET || 'mysecretkey';
 console.log(secret)
 const users = []
+
+export async function signUp(req:Request, res:Response):Promise<Response> {
+  const user:User = req.body
+  
+  return res
+}
 export async function login(req: Request, res: Response): Promise<Response> {
   const user: User = req.body;
     users.push(user)
